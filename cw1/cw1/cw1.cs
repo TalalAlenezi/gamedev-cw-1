@@ -16,7 +16,7 @@ namespace work1
             string heroName = "Link";
             double heroHeight = 175.0;
             int heroAge = 17;
-            string heroSuperPower1 = "Arrows";
+            string heroSuperPower1 = "Steel Armor";
             string heroSuperPower2 = "Master Sword";
 
             int ageDifference = heroAge - age;
@@ -24,6 +24,15 @@ namespace work1
 
             //Console.WriteLine("My Name is {0}, my super powers are {1} and {2}. I'm {3} years old and my speed is {4}", characterName, superPower1, superPower2, age, speed);
             Console.WriteLine("The Age difference is {0}", ageDifference);
+
+            //bonuse
+            if (superPower1 == heroSuperPower1) {
+                Console.WriteLine("They Have the Same Power: {0}",superPower1);
+            }
+            if (superPower2 == heroSuperPower2)
+            {
+                Console.WriteLine("They Have the Same Power: {0}", superPower2);
+            }
 
         }
     }
