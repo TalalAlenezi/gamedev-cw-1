@@ -4,6 +4,7 @@ namespace work1
 {
     class Program
     {
+        static double playerSpeed;
         static void Main(string[] args)
         {
             string characterName = "Ahmad";
@@ -23,17 +24,32 @@ namespace work1
 
 
             //Console.WriteLine("My Name is {0}, my super powers are {1} and {2}. I'm {3} years old and my speed is {4}", characterName, superPower1, superPower2, age, speed);
-            Console.WriteLine("The Age difference is {0}", ageDifference);
+            //Console.WriteLine("The Age difference is {0}", ageDifference);
 
             //bonuse
-            if (superPower1 == heroSuperPower1) {
-                Console.WriteLine("They Have the Same Power: {0}",superPower1);
-            }
-            if (superPower2 == heroSuperPower2)
-            {
-                Console.WriteLine("They Have the Same Power: {0}", superPower2);
-            }
+            //if (superPower1 == heroSuperPower1) {
+            //    Console.WriteLine("They Have the Same Power: {0}",superPower1);
+            //}
+            //if (superPower2 == heroSuperPower2)
+            //{
+            //    Console.WriteLine("They Have the Same Power: {0}", superPower2);
+            //}
 
+            //cw3
+
+            setSpeed(2.5);
+            getSpeed();
+
+        }
+
+        static void setSpeed(double speed)
+        {
+            playerSpeed = speed;
+        } 
+
+        static void getSpeed()
+        {
+            Console.WriteLine("The current player speed is {0}", playerSpeed);
         }
     }
 }
