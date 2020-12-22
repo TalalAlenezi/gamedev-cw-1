@@ -35,11 +35,16 @@ namespace work1
             //    Console.WriteLine("They Have the Same Power: {0}", superPower2);
             //}
 
+
             //cw3
 
             setSpeed(2.5);
             getSpeed();
 
+            //cw4
+
+            int[] characterPower = { 150, 175, 75, 100, 200 };
+            comparePower(characterPower);
         }
 
         static void setSpeed(double speed)
@@ -50,6 +55,16 @@ namespace work1
         static void getSpeed()
         {
             Console.WriteLine("The current player speed is {0}", playerSpeed);
+        }
+
+        static void comparePower(int[] characterPower)
+        {
+            if (characterPower[0] > characterPower[2])
+                Console.WriteLine("The 1st character is more POWERFULL!!");
+            else if (characterPower[0] < characterPower[2])
+                Console.WriteLine("The 3rd character is more POWERFULL!!");
+            else
+                Console.WriteLine("Both characters are equal");
         }
     }
 }
